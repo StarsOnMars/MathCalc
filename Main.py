@@ -307,6 +307,12 @@ def intprojblock2():
     looped_number = int(input("Which number do you want to see over and over?: "))
     loop_duration = int(input("How long should it go on for?: "))
     num_loop = 0
+    for x in range(loop_duration):
+        print(x)
+        if x == looped_number:
+            print("Done!", num_loop, "amount of loops done.")
+        num_loop += 1
+        integrationproj()
 
 
 def intprojblock3():
